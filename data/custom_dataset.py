@@ -39,11 +39,16 @@ class CustomDataset(Pix2pixDataset):
         image_dir = opt.image_dir
         image_paths = make_dataset(image_dir, recursive=False, read_cache=True)
 
+
+
+
         if len(opt.instance_dir) > 0:
             instance_dir = opt.instance_dir
             instance_paths = make_dataset(instance_dir, recursive=False, read_cache=True)
         else:
             instance_paths = []
+
+
 
         assert len(label_paths) == len(image_paths), "The #images in %s and %s do not match. Is there something wrong?"
 

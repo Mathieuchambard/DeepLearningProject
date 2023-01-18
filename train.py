@@ -5,11 +5,23 @@ Licensed under the CC BY-NC-SA 4.0 license (https://creativecommons.org/licenses
 
 import sys
 from collections import OrderedDict
+from scipy.io import loadmat
+
+
+import torch
 from options.train_options import TrainOptions
 import data
 from util.iter_counter import IterationCounter
 from util.visualizer import Visualizer
 from trainers.pix2pix_trainer import Pix2PixTrainer
+import numpy as np
+
+def findColor(colors,pixel):
+    for i in range(len(colors)):
+        if (colors[i] == pixel).all():
+            return i
+    return -1
+
 
 # parse options
 opt = TrainOptions().parse()
@@ -20,8 +32,11 @@ print(' '.join(sys.argv))
 # load the dataset
 dataloader = data.create_dataloader(opt)
 
+
+
 # create trainer for our model
 trainer = Pix2PixTrainer(opt)
+
 
 # create tool for counting iterations
 iter_counter = IterationCounter(opt, len(dataloader))
@@ -29,10 +44,19 @@ iter_counter = IterationCounter(opt, len(dataloader))
 # create tool for visualization
 visualizer = Visualizer(opt)
 
+
+
+
+colors = loadmat('OurTrainData/color150.mat')['colors']
+
+
 for epoch in iter_counter.training_epochs():
+
     iter_counter.record_epoch_start(epoch)
-    for i, data_i in enumerate(dataloader, start=iter_counter.epoch_iter):
+    for i, data_i in enumerate(dataloader, start=iter_counter.epoch_iter): #Probleme ici
+
         iter_counter.record_one_iteration()
+
 
         # Training
         # train generator
