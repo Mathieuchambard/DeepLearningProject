@@ -47,7 +47,7 @@ visualizer = Visualizer(opt)
 
 
 
-colors = loadmat('OurTrainData/color150.mat')['colors']
+colors = loadmat('labelInformation/color150.mat')['colors']
 
 
 for epoch in iter_counter.training_epochs():
