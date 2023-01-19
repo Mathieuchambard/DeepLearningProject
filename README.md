@@ -27,6 +27,17 @@ For press and other inquiries, please contact [Hector Marinez](hmarinez@nvidia.c
 
 ## Installation
 
+Avant toute chose, cloner ce repository dans votre environnement 
+
+## Tester nos modèles
+
+TOut 
+
+
+### Entrainer et tester votre propre modèle
+
+
+
 
 
 ## Acknowledgments
