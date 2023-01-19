@@ -27,16 +27,7 @@ For press and other inquiries, please contact [Hector Marinez](hmarinez@nvidia.c
 
 ## Installation
 
-### Citation
-If you use this code for your research, please cite our papers.
-```
-@inproceedings{park2019SPADE,
-  title={Semantic Image Synthesis with Spatially-Adaptive Normalization},
-  author={Park, Taesung and Liu, Ming-Yu and Wang, Ting-Chun and Zhu, Jun-Yan},
-  booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
-  year={2019}
-}
-```
+
 
 ## Acknowledgments
-This code borrows heavily from pix2pixHD. We thank Jiayuan Mao for his Synchronized Batch Normalization code.
+This code borrows heavily from SPADE and pix2pixHD. We thank Jiayuan Mao for his Synchronized Batch Normalization code.
