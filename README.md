@@ -70,7 +70,7 @@ python -u test.py --img dossierImage
 
 #### Entrainement du modèle
 
-Entrainer votre modèle peut être trés long. Avec une carte graphique RTX 3060, pour 3455 images, l'éxécution a duré 24h.
+Entrainer votre modèle peut être trés long. Avec une carte graphique RTX 3060, pour 3455 images pour 50 epochs, l'éxécution a duré 24h.
 
 Pour entrainer votre modèle avec vos propres données, créer un environnement et télécharger  : 
 - tensorflow==1.15.0
