@@ -35,7 +35,9 @@ Déposer dans ce dossier le modèle que vous avez téléchargé (Dans le fichier
 
 Vous êtes prêt à générer des images !
 
-Créer un dossier en déposant à l'intérieur vos fragmentations. Vous pouvez tester la méthode avec les images dans imageTest ou dataLanscape/test_label
+Créer un dossier en déposant à l'intérieur vos fragmentations. 
+
+Des fragmentation sont disponibles dans imageTest ou dataLanscape/test_label.
 
 Pour faire vos propres dessins, les images doivent être des nuances de gris avec comme couleur de gris : 1 + le label que l'on veut. Les labels sont dans labelInformation/label.csv.
 Exemple : Si vous voulez mettre du ciel, il faut regarder le label dans label.csv : le label est 3 donc il faut mettre la couleur 4.
