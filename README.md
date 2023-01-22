@@ -42,10 +42,14 @@ Exemple : Si vous voulez mettre du ciel, il faut regarder le label dans label.cs
 
 
 Ensuite, lancer dans un terminal :
+```
 python test.py --name nomModel --dataset_mode custom --no_instance --label_nc 150  --label_dir dossierLabel --image_dir dossierLabel
+```
 
-Exemple : python test.py --name LandscapeModel --dataset_mode custom --no_instance --label_nc 150  --label_dir imageTest/label --image_dir imageTest/label
-
+Exemple : 
+```
+python test.py --name LandscapeModel --dataset_mode custom --no_instance --label_nc 150  --label_dir imageTest/label --image_dir imageTest/label
+```
 
 ### Entrainer et tester votre propre modèle
 
@@ -58,7 +62,9 @@ Sinon, il faut telécharger le dossier (https://mega.nz/folder/YfNhjA6C#iQ8nlSj9
 Dans le dossier segmentation, créer un dossier ckpt et mettre le dossier téléchargé.
 
 Pour fragmenter vos images, exécuter dans segmentation :
+```
 python -u test.py --img dossierImage
+```
 
 #### Entrainement du modèle
 
