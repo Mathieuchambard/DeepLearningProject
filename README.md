@@ -4,19 +4,10 @@
 # Semantic Image Synthesis with SPADE
 ![GauGAN demo](https://nvlabs.github.io/SPADE//images/ocean.gif)
 
-## Source
-
-### [Project page](https://nvlabs.github.io/SPADE/) |   [Paper](https://arxiv.org/abs/1903.07291) | [Online Interactive Demo of GauGAN](https://www.nvidia.com/en-us/research/ai-playground/) | [GTC 2019 demo](https://youtu.be/p5U4NgVGAwg) | [Youtube Demo of GauGAN](https://youtu.be/MXWm6w4E5q0)
-
-Semantic Image Synthesis with Spatially-Adaptive Normalization.<br>
-[Taesung Park](http://taesung.me/),  [Ming-Yu Liu](http://mingyuliu.net/), [Ting-Chun Wang](https://tcwang0509.github.io/),  and [Jun-Yan Zhu](http://people.csail.mit.edu/junyanz/).<br>
-In CVPR 2019 (Oral).
-
-## Installation
-
-Avant toute chose, cloner ce repository dans votre environnement.
 
 ## Tester nos modèles
+
+Avant toute chose, cloner ce repository dans votre environnement.
 
 Pour tester il vous faut les librairies python suivantes :
 - torch>=1.0.0
@@ -83,7 +74,7 @@ python train.py --name nomModel --dataset_mode custom --label_dir dossierLabel -
 ```
 
 Remplacer nomModel par le nom de votre model, dossierLabel et dossierImage par le nom de dossier de vos labels et de vos images.
-NombreLabel est le nombre de label fragmenté. Si vous utilisez la fragmentation de la partie Fragmenter vos images
+NombreLabel est le nombre de label fragmenté. Si vous utilisez les fragmentations de la partie Fragmenter vos images de ce tutoriel, remplacer NombreLabel par 150.
 
 Si l'entrainement s'interrompt, relancez avec la commande : 
 ```
@@ -105,6 +96,13 @@ python train.py --name animeModel --dataset_mode custom --label_dir dataAnime/la
 
 Voir la partie Tester nos modèles en changeant le nom du model.
 
+## Source
+
+### [Project page](https://nvlabs.github.io/SPADE/) |   [Paper](https://arxiv.org/abs/1903.07291) | [Online Interactive Demo of GauGAN](https://www.nvidia.com/en-us/research/ai-playground/) | [GTC 2019 demo](https://youtu.be/p5U4NgVGAwg) | [Youtube Demo of GauGAN](https://youtu.be/MXWm6w4E5q0)
+
+Semantic Image Synthesis with Spatially-Adaptive Normalization.<br>
+[Taesung Park](http://taesung.me/),  [Ming-Yu Liu](http://mingyuliu.net/), [Ting-Chun Wang](https://tcwang0509.github.io/),  and [Jun-Yan Zhu](http://people.csail.mit.edu/junyanz/).<br>
+In CVPR 2019 (Oral).
 
 ## Acknowledgments
 This code borrows heavily from SPADE and pix2pixHD. We thank Jiayuan Mao for his Synchronized Batch Normalization code.
