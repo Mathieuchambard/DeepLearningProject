@@ -4,7 +4,7 @@
 # Semantic Image Synthesis with SPADE
 ![GauGAN demo](https://nvlabs.github.io/SPADE//images/ocean.gif)
 
-# Source
+## Source
 
 ### [Project page](https://nvlabs.github.io/SPADE/) |   [Paper](https://arxiv.org/abs/1903.07291) | [Online Interactive Demo of GauGAN](https://www.nvidia.com/en-us/research/ai-playground/) | [GTC 2019 demo](https://youtu.be/p5U4NgVGAwg) | [Youtube Demo of GauGAN](https://youtu.be/MXWm6w4E5q0)
 
@@ -78,19 +78,28 @@ Pour entrainer votre modèle avec vos propres données, créer un environnement 
 - pillow==6.1.0
 
 Lancer la commande suivante :
+```
 python train.py --name nomModel --dataset_mode custom --label_dir dossierLabel --image_dir dossierImage --label_nc NombreLabel --no_instance
+```
 
 Remplacer nomModel par le nom de votre model, dossierLabel et dossierImage par le nom de dossier de vos labels et de vos images.
 NombreLabel est le nombre de label fragmenté. Si vous utilisez la fragmentation de la partie Fragmenter vos images
 
 Si l'entrainement s'interrompt, relancez avec la commande : 
+```
 python train.py --name nomModel --dataset_mode custom --label_dir dossierLabel --image_dir dossierImage --label_nc NombreLabel --no_instance --continue_train
+```
 
 
 Si vous voulez entrainer le modele avec nos données :
-Paysages classiques : python train.py --name LandscapeModel --dataset_mode custom --label_dir dataLandscape/train_label --image_dir dataLandscape/train_img --label_nc 150 --no_instance
-Paysages animés : python train.py --name animeModel --dataset_mode custom --label_dir dataAnime/label --image_dir dataAnime/img --label_nc 150 --no_instance
-
+Paysages classiques : 
+```
+python train.py --name LandscapeModel --dataset_mode custom --label_dir dataLandscape/train_label --image_dir dataLandscape/train_img --label_nc 150 --no_instance
+```
+Paysages animés : 
+```
+python train.py --name animeModel --dataset_mode custom --label_dir dataAnime/label --image_dir dataAnime/img --label_nc 150 --no_instance
+```
 
 #### Test du modèle 
 
