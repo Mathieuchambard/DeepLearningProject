@@ -83,10 +83,12 @@ python train.py --name nomModel --dataset_mode custom --label_dir dossierLabel -
 
 
 Si vous voulez entrainer le modele avec nos données :
+
 Paysages classiques : 
 ```
 python train.py --name LandscapeModel --dataset_mode custom --label_dir dataLandscape/train_label --image_dir dataLandscape/train_img --label_nc 150 --no_instance
 ```
+
 Paysages animés : 
 ```
 python train.py --name animeModel --dataset_mode custom --label_dir dataAnime/label --image_dir dataAnime/img --label_nc 150 --no_instance
