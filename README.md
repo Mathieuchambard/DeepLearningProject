@@ -101,6 +101,7 @@ Voir la partie Tester nos modèles en changeant le nom du model.
 
 ## Source
 Ce code est emprunté des méthodes SPADE et pix2pixHD.
+
 Lien Github : https://github.com/NVlabs/SPADE, https://github.com/NVIDIA/pix2pixHD
 
 
